@@ -89,7 +89,7 @@ export default function App() {
 // Estilização
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
+    flex: 1
   },
   results: {
     flex: 2,
@@ -107,11 +107,11 @@ const styles = StyleSheet.create({
     color: "#7c7c7c",
     fontSize: 20,
     marginRight: 10,
-    alignSelf: 'flex-end',
+    alignSelf: 'flex-end'
   },
   buttons: {
     flexDirection: 'row',
-    flexWrap: 'wrap',
+    flexWrap: 'wrap'
   },
   button: {
     backgroundColor: 'white',
@@ -119,10 +119,10 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     minWidth: 90, 
     minHeight: 90,
-    flex: 2,
+    flex: 2
   },
   textButton: {
     color: "#7c7c7c",
-    fontSize: 20,
+    fontSize: 20
   } 
 });
