@@ -51,6 +51,17 @@ export default function App() {
         setLastNumber(currentNumber + " = ")
         calculator()
         return
+      case '.':        
+        if (currentNumber.indexOf(" ") ==-1 && currentNumber.indexOf(".") ==-1 ) {
+          setCurrentNumber((currentNumber)+".")          
+        }
+        if (currentNumber.indexOf(" ") !=-1 ) {
+          const dotpos = currentNumber.indexOf(" ")          
+          if (dotpos > currentNumber.lastIndexOf(".")) {
+            setCurrentNumber((currentNumber)+".")
+          }          
+        }
+        return
       case '+/-':
         if (currentNumber != '' && currentNumber.indexOf(" ") ==-1 ) {
           setCurrentNumber((currentNumber *-1)+"")
